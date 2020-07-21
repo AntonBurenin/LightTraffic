@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TrafficLightView: View {
     @State private var buttonText = "START"
     @State private var currentLight = Lights.none
     
@@ -45,7 +45,7 @@ struct ContentView: View {
     }
 }
 
-extension ContentView {
+extension TrafficLightView {
     private enum Lights {
         case red, yellow, green, none
     }
@@ -66,8 +66,8 @@ extension ContentView {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct TrafficLightView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TrafficLightView()
     }
 }
